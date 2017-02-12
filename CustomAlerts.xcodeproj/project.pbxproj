@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		477E91C560A555FB39BFDA16 /* Pods_CustomAlerts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DDFB9139242C838F56E731 /* Pods_CustomAlerts.framework */; };
 		CF60B4481E50329600643870 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF60B4471E50329600643870 /* AppDelegate.swift */; };
 		CF60B44A1E50329600643870 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF60B4491E50329600643870 /* ViewController.swift */; };
 		CF60B44D1E50329600643870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF60B44B1E50329600643870 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00DDFB9139242C838F56E731 /* Pods_CustomAlerts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomAlerts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		544869F976EB2CA5B47484C8 /* Pods-CustomAlerts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAlerts.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomAlerts/Pods-CustomAlerts.release.xcconfig"; sourceTree = "<group>"; };
+		A4713ABA1157486A8BCDC3C1 /* Pods-CustomAlerts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAlerts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomAlerts/Pods-CustomAlerts.debug.xcconfig"; sourceTree = "<group>"; };
 		CF60B4441E50329600643870 /* CustomAlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomAlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF60B4471E50329600643870 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF60B4491E50329600643870 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				477E91C560A555FB39BFDA16 /* Pods_CustomAlerts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		526ECB03F21E577DC6194462 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4713ABA1157486A8BCDC3C1 /* Pods-CustomAlerts.debug.xcconfig */,
+				544869F976EB2CA5B47484C8 /* Pods-CustomAlerts.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CF60B43B1E50329600643870 = {
 			isa = PBXGroup;
 			children = (
 				CF60B4461E50329600643870 /* CustomAlerts */,
 				CF60B4451E50329600643870 /* Products */,
+				526ECB03F21E577DC6194462 /* Pods */,
+				DD116F104D21CB7FB70EF320 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = CustomAlerts;
 			sourceTree = "<group>";
 		};
+		DD116F104D21CB7FB70EF320 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00DDFB9139242C838F56E731 /* Pods_CustomAlerts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF60B4561E50329600643870 /* Build configuration list for PBXNativeTarget "CustomAlerts" */;
 			buildPhases = (
+				652F02A2808720381913FC04 /* [CP] Check Pods Manifest.lock */,
 				CF60B4401E50329600643870 /* Sources */,
 				CF60B4411E50329600643870 /* Frameworks */,
 				CF60B4421E50329600643870 /* Resources */,
+				1EAA2F8EA679AF62E5D72357 /* [CP] Embed Pods Frameworks */,
+				301F3A340D30C4B99158C3B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EAA2F8EA679AF62E5D72357 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CustomAlerts/Pods-CustomAlerts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		301F3A340D30C4B99158C3B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CustomAlerts/Pods-CustomAlerts-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		652F02A2808720381913FC04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CF60B4401E50329600643870 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		CF60B4571E50329600643870 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4713ABA1157486A8BCDC3C1 /* Pods-CustomAlerts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XQW53V53S6;
@@ -272,6 +348,7 @@
 		};
 		CF60B4581E50329600643870 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 544869F976EB2CA5B47484C8 /* Pods-CustomAlerts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XQW53V53S6;
